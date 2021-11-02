@@ -1,6 +1,5 @@
 import random
 import time
-import sys
 from os import system
 
 options   = ['rock', 'paper', 'scissor']
@@ -29,8 +28,7 @@ while True:
     if not (int(choice_p1) >= 1 and int(choice_p1)) <= 3:
         print("Select a valid option")
         input()
-        
-        system('clear')
+
         continue
         
     choice_p2 = random.choice(options)
