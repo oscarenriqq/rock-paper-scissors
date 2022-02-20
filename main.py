@@ -6,6 +6,8 @@ options   = ['rock', 'paper', 'scissor']
 attemps_p1 = 3
 attemps_p2 = 3
 
+# 😀
+ 
 def validateOptions(p1, p2):
     if p1 == p2:
         return 0
@@ -51,6 +53,7 @@ while True:
         if attemps_p2 > 0:
             print ("PLAYER 1 WIN")
         else:
+            #🏆 
             print("YOU ARE THE CHAMPION!!!")
             break
     elif result == 2:
@@ -59,13 +62,14 @@ while True:
         if attemps_p1 > 0:
             print ("PLAYER 2 WIN!")
         else:
+            #🏆
             print("PLAYER 2 WON THE GAME, TRY AGAIN.")
             break 
     else:
         print("TIE!")
         
     print()
-    
+        
     print("Player 1 <3: " + str(attemps_p1))
     print("Player 2 <3: " + str(attemps_p2))
     
