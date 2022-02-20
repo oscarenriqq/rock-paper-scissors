@@ -25,10 +25,8 @@ while True:
     
     choice_p1 = int(input("Rock, paper or scissors? "))
     
-    if not (int(choice_p1) >= 1 and int(choice_p1)) <= 3:
+    if not (choice_p1 >= 1 and choice_p1 <= 3):
         print("Select a valid option")
-        input()
-
         continue
         
     choice_p2 = random.choice(options)
@@ -61,9 +59,8 @@ while True:
         if attemps_p1 > 0:
             print ("PLAYER 2 WIN!")
         else:
-            print("PLAYER 2 WIN THE PLAY, TRY AGAIN.")
-            break
-        
+            print("PLAYER 2 WON THE GAME, TRY AGAIN.")
+            break 
     else:
         print("TIE!")
         
